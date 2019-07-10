@@ -35,7 +35,6 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * @author "Frederic Bregier"
- *
  */
 public class ClientExample implements Runnable {
     private static final int PORT = 7911;

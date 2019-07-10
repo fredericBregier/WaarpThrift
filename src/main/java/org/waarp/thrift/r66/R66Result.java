@@ -314,7 +314,6 @@ public class R66Result implements org.apache.thrift.TBase<R66Result, R66Result._
     }
 
     /**
-     *
      * @see RequestMode
      */
     public RequestMode getMode() {
@@ -322,7 +321,6 @@ public class R66Result implements org.apache.thrift.TBase<R66Result, R66Result._
     }
 
     /**
-     *
      * @see RequestMode
      */
     public R66Result setMode(RequestMode mode) {
@@ -334,7 +332,9 @@ public class R66Result implements org.apache.thrift.TBase<R66Result, R66Result._
         this.mode = null;
     }
 
-    /** Returns true if field mode is set (has been assigned a value) and false otherwise */
+    /**
+     * Returns true if field mode is set (has been assigned a value) and false otherwise
+     */
     public boolean isSetMode() {
         return this.mode != null;
     }
@@ -358,7 +358,9 @@ public class R66Result implements org.apache.thrift.TBase<R66Result, R66Result._
         this.fromuid = null;
     }
 
-    /** Returns true if field fromuid is set (has been assigned a value) and false otherwise */
+    /**
+     * Returns true if field fromuid is set (has been assigned a value) and false otherwise
+     */
     public boolean isSetFromuid() {
         return this.fromuid != null;
     }
@@ -382,7 +384,9 @@ public class R66Result implements org.apache.thrift.TBase<R66Result, R66Result._
         this.destuid = null;
     }
 
-    /** Returns true if field destuid is set (has been assigned a value) and false otherwise */
+    /**
+     * Returns true if field destuid is set (has been assigned a value) and false otherwise
+     */
     public boolean isSetDestuid() {
         return this.destuid != null;
     }
@@ -406,7 +410,9 @@ public class R66Result implements org.apache.thrift.TBase<R66Result, R66Result._
         this.file = null;
     }
 
-    /** Returns true if field file is set (has been assigned a value) and false otherwise */
+    /**
+     * Returns true if field file is set (has been assigned a value) and false otherwise
+     */
     public boolean isSetFile() {
         return this.file != null;
     }
@@ -430,7 +436,9 @@ public class R66Result implements org.apache.thrift.TBase<R66Result, R66Result._
         this.rule = null;
     }
 
-    /** Returns true if field rule is set (has been assigned a value) and false otherwise */
+    /**
+     * Returns true if field rule is set (has been assigned a value) and false otherwise
+     */
     public boolean isSetRule() {
         return this.rule != null;
     }
@@ -455,7 +463,9 @@ public class R66Result implements org.apache.thrift.TBase<R66Result, R66Result._
         __isset_bitfield = EncodingUtils.clearBit(__isset_bitfield, __TID_ISSET_ID);
     }
 
-    /** Returns true if field tid is set (has been assigned a value) and false otherwise */
+    /**
+     * Returns true if field tid is set (has been assigned a value) and false otherwise
+     */
     public boolean isSetTid() {
         return EncodingUtils.testBit(__isset_bitfield, __TID_ISSET_ID);
     }
@@ -465,7 +475,6 @@ public class R66Result implements org.apache.thrift.TBase<R66Result, R66Result._
     }
 
     /**
-     *
      * @see Action
      */
     public Action getAction() {
@@ -473,7 +482,6 @@ public class R66Result implements org.apache.thrift.TBase<R66Result, R66Result._
     }
 
     /**
-     *
      * @see Action
      */
     public R66Result setAction(Action action) {
@@ -485,7 +493,9 @@ public class R66Result implements org.apache.thrift.TBase<R66Result, R66Result._
         this.action = null;
     }
 
-    /** Returns true if field action is set (has been assigned a value) and false otherwise */
+    /**
+     * Returns true if field action is set (has been assigned a value) and false otherwise
+     */
     public boolean isSetAction() {
         return this.action != null;
     }
@@ -497,7 +507,6 @@ public class R66Result implements org.apache.thrift.TBase<R66Result, R66Result._
     }
 
     /**
-     *
      * @see ErrorCode
      */
     public ErrorCode getCode() {
@@ -505,7 +514,6 @@ public class R66Result implements org.apache.thrift.TBase<R66Result, R66Result._
     }
 
     /**
-     *
      * @see ErrorCode
      */
     public R66Result setCode(ErrorCode code) {
@@ -517,7 +525,9 @@ public class R66Result implements org.apache.thrift.TBase<R66Result, R66Result._
         this.code = null;
     }
 
-    /** Returns true if field code is set (has been assigned a value) and false otherwise */
+    /**
+     * Returns true if field code is set (has been assigned a value) and false otherwise
+     */
     public boolean isSetCode() {
         return this.code != null;
     }
@@ -541,7 +551,9 @@ public class R66Result implements org.apache.thrift.TBase<R66Result, R66Result._
         this.resultinfo = null;
     }
 
-    /** Returns true if field resultinfo is set (has been assigned a value) and false otherwise */
+    /**
+     * Returns true if field resultinfo is set (has been assigned a value) and false otherwise
+     */
     public boolean isSetResultinfo() {
         return this.resultinfo != null;
     }
@@ -566,7 +578,9 @@ public class R66Result implements org.apache.thrift.TBase<R66Result, R66Result._
         __isset_bitfield = EncodingUtils.clearBit(__isset_bitfield, __GLOBALSTEP_ISSET_ID);
     }
 
-    /** Returns true if field globalstep is set (has been assigned a value) and false otherwise */
+    /**
+     * Returns true if field globalstep is set (has been assigned a value) and false otherwise
+     */
     public boolean isSetGlobalstep() {
         return EncodingUtils.testBit(__isset_bitfield, __GLOBALSTEP_ISSET_ID);
     }
@@ -589,7 +603,9 @@ public class R66Result implements org.apache.thrift.TBase<R66Result, R66Result._
         __isset_bitfield = EncodingUtils.clearBit(__isset_bitfield, __GLOBALLASTSTEP_ISSET_ID);
     }
 
-    /** Returns true if field globallaststep is set (has been assigned a value) and false otherwise */
+    /**
+     * Returns true if field globallaststep is set (has been assigned a value) and false otherwise
+     */
     public boolean isSetGloballaststep() {
         return EncodingUtils.testBit(__isset_bitfield, __GLOBALLASTSTEP_ISSET_ID);
     }
@@ -612,7 +628,9 @@ public class R66Result implements org.apache.thrift.TBase<R66Result, R66Result._
         __isset_bitfield = EncodingUtils.clearBit(__isset_bitfield, __STEP_ISSET_ID);
     }
 
-    /** Returns true if field step is set (has been assigned a value) and false otherwise */
+    /**
+     * Returns true if field step is set (has been assigned a value) and false otherwise
+     */
     public boolean isSetStep() {
         return EncodingUtils.testBit(__isset_bitfield, __STEP_ISSET_ID);
     }
@@ -635,7 +653,9 @@ public class R66Result implements org.apache.thrift.TBase<R66Result, R66Result._
         __isset_bitfield = EncodingUtils.clearBit(__isset_bitfield, __RANK_ISSET_ID);
     }
 
-    /** Returns true if field rank is set (has been assigned a value) and false otherwise */
+    /**
+     * Returns true if field rank is set (has been assigned a value) and false otherwise
+     */
     public boolean isSetRank() {
         return EncodingUtils.testBit(__isset_bitfield, __RANK_ISSET_ID);
     }
@@ -658,7 +678,9 @@ public class R66Result implements org.apache.thrift.TBase<R66Result, R66Result._
         __isset_bitfield = EncodingUtils.clearBit(__isset_bitfield, __RETRIEVEMODE_ISSET_ID);
     }
 
-    /** Returns true if field retrievemode is set (has been assigned a value) and false otherwise */
+    /**
+     * Returns true if field retrievemode is set (has been assigned a value) and false otherwise
+     */
     public boolean isSetRetrievemode() {
         return EncodingUtils.testBit(__isset_bitfield, __RETRIEVEMODE_ISSET_ID);
     }
@@ -681,7 +703,9 @@ public class R66Result implements org.apache.thrift.TBase<R66Result, R66Result._
         __isset_bitfield = EncodingUtils.clearBit(__isset_bitfield, __ISMOVED_ISSET_ID);
     }
 
-    /** Returns true if field ismoved is set (has been assigned a value) and false otherwise */
+    /**
+     * Returns true if field ismoved is set (has been assigned a value) and false otherwise
+     */
     public boolean isSetIsmoved() {
         return EncodingUtils.testBit(__isset_bitfield, __ISMOVED_ISSET_ID);
     }
@@ -730,7 +754,9 @@ public class R66Result implements org.apache.thrift.TBase<R66Result, R66Result._
         __isset_bitfield = EncodingUtils.clearBit(__isset_bitfield, __BLOCKSIZE_ISSET_ID);
     }
 
-    /** Returns true if field blocksize is set (has been assigned a value) and false otherwise */
+    /**
+     * Returns true if field blocksize is set (has been assigned a value) and false otherwise
+     */
     public boolean isSetBlocksize() {
         return EncodingUtils.testBit(__isset_bitfield, __BLOCKSIZE_ISSET_ID);
     }
@@ -753,7 +779,9 @@ public class R66Result implements org.apache.thrift.TBase<R66Result, R66Result._
         __isset_bitfield = EncodingUtils.clearBit(__isset_bitfield, __MODETRANSFER_ISSET_ID);
     }
 
-    /** Returns true if field modetransfer is set (has been assigned a value) and false otherwise */
+    /**
+     * Returns true if field modetransfer is set (has been assigned a value) and false otherwise
+     */
     public boolean isSetModetransfer() {
         return EncodingUtils.testBit(__isset_bitfield, __MODETRANSFER_ISSET_ID);
     }
@@ -775,7 +803,9 @@ public class R66Result implements org.apache.thrift.TBase<R66Result, R66Result._
         this.start = null;
     }
 
-    /** Returns true if field start is set (has been assigned a value) and false otherwise */
+    /**
+     * Returns true if field start is set (has been assigned a value) and false otherwise
+     */
     public boolean isSetStart() {
         return this.start != null;
     }
@@ -799,7 +829,9 @@ public class R66Result implements org.apache.thrift.TBase<R66Result, R66Result._
         this.stop = null;
     }
 
-    /** Returns true if field stop is set (has been assigned a value) and false otherwise */
+    /**
+     * Returns true if field stop is set (has been assigned a value) and false otherwise
+     */
     public boolean isSetStop() {
         return this.stop != null;
     }
@@ -1042,8 +1074,7 @@ public class R66Result implements org.apache.thrift.TBase<R66Result, R66Result._
     }
 
     /**
-     * Returns true if field corresponding to fieldID is set (has been assigned a value) and false
-     * otherwise
+     * Returns true if field corresponding to fieldID is set (has been assigned a value) and false otherwise
      */
     public boolean isSet(_Fields field) {
         if (field == null) {
@@ -1814,12 +1845,10 @@ public class R66Result implements org.apache.thrift.TBase<R66Result, R66Result._
     }
 
     /**
-     * The set of fields this struct contains, along with convenience methods for finding and
-     * manipulating them.
+     * The set of fields this struct contains, along with convenience methods for finding and manipulating them.
      */
     public enum _Fields implements org.apache.thrift.TFieldIdEnum {
         /**
-         *
          * @see RequestMode
          */
         MODE((short) 1, "mode"),
@@ -1829,12 +1858,10 @@ public class R66Result implements org.apache.thrift.TBase<R66Result, R66Result._
         RULE((short) 5, "rule"),
         TID((short) 20, "tid"),
         /**
-         *
          * @see Action
          */
         ACTION((short) 21, "action"),
         /**
-         *
          * @see ErrorCode
          */
         CODE((short) 30, "code"),

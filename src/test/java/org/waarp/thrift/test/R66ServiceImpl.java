@@ -27,7 +27,6 @@ import java.util.List;
 
 /**
  * @author bregier
- *
  */
 public class R66ServiceImpl implements R66Service.Iface {
 

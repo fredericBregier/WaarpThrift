@@ -28,7 +28,6 @@ import org.waarp.thrift.r66.R66Service;
 
 /**
  * @author "Frederic Bregier"
- *
  */
 public class ServerExample implements Runnable {
     private static final int PORT = 7911;

@@ -125,8 +125,7 @@ public enum ErrorCode implements org.apache.thrift.TEnum {
      */
     CommandNotFound(28),
     /**
-     * Code stands for a request in PassThroughMode and required action is incompatible with this
-     * mode
+     * Code stands for a request in PassThroughMode and required action is incompatible with this mode
      */
     PassThroughMode(29),
     /**

@@ -360,7 +360,7 @@ public class R66Service {
                 prot.writeMessageEnd();
             }
 
-            public boolean getResult() throws org.apache.thrift.TException {
+            public Boolean getResult() throws org.apache.thrift.TException {
                 if (getState() != org.apache.thrift.async.TAsyncMethodCall.State.RESPONSE_READ) {
                     throw new IllegalStateException("Method call not finished!");
                 }
@@ -603,7 +603,9 @@ public class R66Service {
             this.request = null;
         }
 
-        /** Returns true if field request is set (has been assigned a value) and false otherwise */
+        /**
+         * Returns true if field request is set (has been assigned a value) and false otherwise
+         */
         public boolean isSetRequest() {
             return this.request != null;
         }
@@ -637,8 +639,7 @@ public class R66Service {
         }
 
         /**
-         * Returns true if field corresponding to fieldID is set (has been assigned a value) and
-         * false otherwise
+         * Returns true if field corresponding to fieldID is set (has been assigned a value) and false otherwise
          */
         public boolean isSet(_Fields field) {
             if (field == null) {
@@ -767,8 +768,7 @@ public class R66Service {
         }
 
         /**
-         * The set of fields this struct contains, along with convenience methods for finding and
-         * manipulating them.
+         * The set of fields this struct contains, along with convenience methods for finding and manipulating them.
          */
         public enum _Fields implements org.apache.thrift.TFieldIdEnum {
             REQUEST((short) 1, "request");
@@ -802,8 +802,7 @@ public class R66Service {
             }
 
             /**
-             * Find the _Fields constant that matches fieldId, throwing an exception if it is not
-             * found.
+             * Find the _Fields constant that matches fieldId, throwing an exception if it is not found.
              */
             public static _Fields findByThriftIdOrThrow(int fieldId) {
                 _Fields fields = findByThriftId(fieldId);
@@ -1001,7 +1000,9 @@ public class R66Service {
             this.success = null;
         }
 
-        /** Returns true if field success is set (has been assigned a value) and false otherwise */
+        /**
+         * Returns true if field success is set (has been assigned a value) and false otherwise
+         */
         public boolean isSetSuccess() {
             return this.success != null;
         }
@@ -1035,8 +1036,7 @@ public class R66Service {
         }
 
         /**
-         * Returns true if field corresponding to fieldID is set (has been assigned a value) and
-         * false otherwise
+         * Returns true if field corresponding to fieldID is set (has been assigned a value) and false otherwise
          */
         public boolean isSet(_Fields field) {
             if (field == null) {
@@ -1165,8 +1165,7 @@ public class R66Service {
         }
 
         /**
-         * The set of fields this struct contains, along with convenience methods for finding and
-         * manipulating them.
+         * The set of fields this struct contains, along with convenience methods for finding and manipulating them.
          */
         public enum _Fields implements org.apache.thrift.TFieldIdEnum {
             SUCCESS((short) 0, "success");
@@ -1200,8 +1199,7 @@ public class R66Service {
             }
 
             /**
-             * Find the _Fields constant that matches fieldId, throwing an exception if it is not
-             * found.
+             * Find the _Fields constant that matches fieldId, throwing an exception if it is not found.
              */
             public static _Fields findByThriftIdOrThrow(int fieldId) {
                 _Fields fields = findByThriftId(fieldId);
@@ -1397,7 +1395,9 @@ public class R66Service {
             this.request = null;
         }
 
-        /** Returns true if field request is set (has been assigned a value) and false otherwise */
+        /**
+         * Returns true if field request is set (has been assigned a value) and false otherwise
+         */
         public boolean isSetRequest() {
             return this.request != null;
         }
@@ -1431,8 +1431,7 @@ public class R66Service {
         }
 
         /**
-         * Returns true if field corresponding to fieldID is set (has been assigned a value) and
-         * false otherwise
+         * Returns true if field corresponding to fieldID is set (has been assigned a value) and false otherwise
          */
         public boolean isSet(_Fields field) {
             if (field == null) {
@@ -1561,8 +1560,7 @@ public class R66Service {
         }
 
         /**
-         * The set of fields this struct contains, along with convenience methods for finding and
-         * manipulating them.
+         * The set of fields this struct contains, along with convenience methods for finding and manipulating them.
          */
         public enum _Fields implements org.apache.thrift.TFieldIdEnum {
             REQUEST((short) 1, "request");
@@ -1596,8 +1594,7 @@ public class R66Service {
             }
 
             /**
-             * Find the _Fields constant that matches fieldId, throwing an exception if it is not
-             * found.
+             * Find the _Fields constant that matches fieldId, throwing an exception if it is not found.
              */
             public static _Fields findByThriftIdOrThrow(int fieldId) {
                 _Fields fields = findByThriftId(fieldId);
@@ -1792,7 +1789,9 @@ public class R66Service {
             this.success = null;
         }
 
-        /** Returns true if field success is set (has been assigned a value) and false otherwise */
+        /**
+         * Returns true if field success is set (has been assigned a value) and false otherwise
+         */
         public boolean isSetSuccess() {
             return this.success != null;
         }
@@ -1826,8 +1825,7 @@ public class R66Service {
         }
 
         /**
-         * Returns true if field corresponding to fieldID is set (has been assigned a value) and
-         * false otherwise
+         * Returns true if field corresponding to fieldID is set (has been assigned a value) and false otherwise
          */
         public boolean isSet(_Fields field) {
             if (field == null) {
@@ -1956,8 +1954,7 @@ public class R66Service {
         }
 
         /**
-         * The set of fields this struct contains, along with convenience methods for finding and
-         * manipulating them.
+         * The set of fields this struct contains, along with convenience methods for finding and manipulating them.
          */
         public enum _Fields implements org.apache.thrift.TFieldIdEnum {
             SUCCESS((short) 0, "success");
@@ -1991,8 +1988,7 @@ public class R66Service {
             }
 
             /**
-             * Find the _Fields constant that matches fieldId, throwing an exception if it is not
-             * found.
+             * Find the _Fields constant that matches fieldId, throwing an exception if it is not found.
              */
             public static _Fields findByThriftIdOrThrow(int fieldId) {
                 _Fields fields = findByThriftId(fieldId);
@@ -2215,7 +2211,9 @@ public class R66Service {
             this.fromuid = null;
         }
 
-        /** Returns true if field fromuid is set (has been assigned a value) and false otherwise */
+        /**
+         * Returns true if field fromuid is set (has been assigned a value) and false otherwise
+         */
         public boolean isSetFromuid() {
             return this.fromuid != null;
         }
@@ -2239,7 +2237,9 @@ public class R66Service {
             this.touid = null;
         }
 
-        /** Returns true if field touid is set (has been assigned a value) and false otherwise */
+        /**
+         * Returns true if field touid is set (has been assigned a value) and false otherwise
+         */
         public boolean isSetTouid() {
             return this.touid != null;
         }
@@ -2264,7 +2264,9 @@ public class R66Service {
             __isset_bitfield = EncodingUtils.clearBit(__isset_bitfield, __TID_ISSET_ID);
         }
 
-        /** Returns true if field tid is set (has been assigned a value) and false otherwise */
+        /**
+         * Returns true if field tid is set (has been assigned a value) and false otherwise
+         */
         public boolean isSetTid() {
             return EncodingUtils.testBit(__isset_bitfield, __TID_ISSET_ID);
         }
@@ -2318,8 +2320,7 @@ public class R66Service {
         }
 
         /**
-         * Returns true if field corresponding to fieldID is set (has been assigned a value) and
-         * false otherwise
+         * Returns true if field corresponding to fieldID is set (has been assigned a value) and false otherwise
          */
         public boolean isSet(_Fields field) {
             if (field == null) {
@@ -2510,8 +2511,7 @@ public class R66Service {
         }
 
         /**
-         * The set of fields this struct contains, along with convenience methods for finding and
-         * manipulating them.
+         * The set of fields this struct contains, along with convenience methods for finding and manipulating them.
          */
         public enum _Fields implements org.apache.thrift.TFieldIdEnum {
             FROMUID((short) 1, "fromuid"),
@@ -2551,8 +2551,7 @@ public class R66Service {
             }
 
             /**
-             * Find the _Fields constant that matches fieldId, throwing an exception if it is not
-             * found.
+             * Find the _Fields constant that matches fieldId, throwing an exception if it is not found.
              */
             public static _Fields findByThriftIdOrThrow(int fieldId) {
                 _Fields fields = findByThriftId(fieldId);
@@ -2794,7 +2793,9 @@ public class R66Service {
             __isset_bitfield = EncodingUtils.clearBit(__isset_bitfield, __SUCCESS_ISSET_ID);
         }
 
-        /** Returns true if field success is set (has been assigned a value) and false otherwise */
+        /**
+         * Returns true if field success is set (has been assigned a value) and false otherwise
+         */
         public boolean isSetSuccess() {
             return EncodingUtils.testBit(__isset_bitfield, __SUCCESS_ISSET_ID);
         }
@@ -2826,8 +2827,7 @@ public class R66Service {
         }
 
         /**
-         * Returns true if field corresponding to fieldID is set (has been assigned a value) and
-         * false otherwise
+         * Returns true if field corresponding to fieldID is set (has been assigned a value) and false otherwise
          */
         public boolean isSet(_Fields field) {
             if (field == null) {
@@ -2951,8 +2951,7 @@ public class R66Service {
         }
 
         /**
-         * The set of fields this struct contains, along with convenience methods for finding and
-         * manipulating them.
+         * The set of fields this struct contains, along with convenience methods for finding and manipulating them.
          */
         public enum _Fields implements org.apache.thrift.TFieldIdEnum {
             SUCCESS((short) 0, "success");
@@ -2986,8 +2985,7 @@ public class R66Service {
             }
 
             /**
-             * Find the _Fields constant that matches fieldId, throwing an exception if it is not
-             * found.
+             * Find the _Fields constant that matches fieldId, throwing an exception if it is not found.
              */
             public static _Fields findByThriftIdOrThrow(int fieldId) {
                 _Fields fields = findByThriftId(fieldId);
@@ -3180,7 +3178,9 @@ public class R66Service {
             this.request = null;
         }
 
-        /** Returns true if field request is set (has been assigned a value) and false otherwise */
+        /**
+         * Returns true if field request is set (has been assigned a value) and false otherwise
+         */
         public boolean isSetRequest() {
             return this.request != null;
         }
@@ -3214,8 +3214,7 @@ public class R66Service {
         }
 
         /**
-         * Returns true if field corresponding to fieldID is set (has been assigned a value) and
-         * false otherwise
+         * Returns true if field corresponding to fieldID is set (has been assigned a value) and false otherwise
          */
         public boolean isSet(_Fields field) {
             if (field == null) {
@@ -3344,8 +3343,7 @@ public class R66Service {
         }
 
         /**
-         * The set of fields this struct contains, along with convenience methods for finding and
-         * manipulating them.
+         * The set of fields this struct contains, along with convenience methods for finding and manipulating them.
          */
         public enum _Fields implements org.apache.thrift.TFieldIdEnum {
             REQUEST((short) 1, "request");
@@ -3379,8 +3377,7 @@ public class R66Service {
             }
 
             /**
-             * Find the _Fields constant that matches fieldId, throwing an exception if it is not
-             * found.
+             * Find the _Fields constant that matches fieldId, throwing an exception if it is not found.
              */
             public static _Fields findByThriftIdOrThrow(int fieldId) {
                 _Fields fields = findByThriftId(fieldId);
@@ -3594,7 +3591,9 @@ public class R66Service {
             this.success = null;
         }
 
-        /** Returns true if field success is set (has been assigned a value) and false otherwise */
+        /**
+         * Returns true if field success is set (has been assigned a value) and false otherwise
+         */
         public boolean isSetSuccess() {
             return this.success != null;
         }
@@ -3628,8 +3627,7 @@ public class R66Service {
         }
 
         /**
-         * Returns true if field corresponding to fieldID is set (has been assigned a value) and
-         * false otherwise
+         * Returns true if field corresponding to fieldID is set (has been assigned a value) and false otherwise
          */
         public boolean isSet(_Fields field) {
             if (field == null) {
@@ -3755,8 +3753,7 @@ public class R66Service {
         }
 
         /**
-         * The set of fields this struct contains, along with convenience methods for finding and
-         * manipulating them.
+         * The set of fields this struct contains, along with convenience methods for finding and manipulating them.
          */
         public enum _Fields implements org.apache.thrift.TFieldIdEnum {
             SUCCESS((short) 0, "success");
@@ -3790,8 +3787,7 @@ public class R66Service {
             }
 
             /**
-             * Find the _Fields constant that matches fieldId, throwing an exception if it is not
-             * found.
+             * Find the _Fields constant that matches fieldId, throwing an exception if it is not found.
              */
             public static _Fields findByThriftIdOrThrow(int fieldId) {
                 _Fields fields = findByThriftId(fieldId);
