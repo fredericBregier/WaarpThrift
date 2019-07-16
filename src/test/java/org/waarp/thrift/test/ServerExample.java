@@ -29,11 +29,15 @@ import org.apache.thrift.transport.TServerTransport;
 import org.apache.thrift.transport.TTransportException;
 import org.waarp.thrift.r66.R66Service;
 
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
+
 /**
  * @author "Frederic Bregier"
  */
 public class ServerExample implements Runnable {
-  private static final int PORT = 7911;
   /*
    * Benchmark<br>
    * Blocking: JDK6-32 13640/s JDK6-64 7004 JKD7-64 7385<br>
@@ -52,16 +56,44 @@ public class ServerExample implements Runnable {
    * Same in TCompactProtocol<br>
    * Blocking TThreadPoolServer: ?/49309<br>
    */
-  private static boolean isBlocking = true;
+  private static boolean serverMode = true;
+  private static int PORT = 7911;
+  private static TServer server;
+  private static Thread runThread;
+  private static ExecutorService service;
+  private static Lock lock = new ReentrantLock();
 
-  public static void main(String[] args) {
-    new Thread(new ServerExample()).run();
+  public static void main(String[] args) throws InterruptedException {
+    startServer(true, PORT);
+  }
+
+  public static void startServer(boolean mode, int port)
+      throws InterruptedException {
+    serverMode = mode;
+    PORT = port;
+    runThread = new Thread(new ServerExample());
+    runThread.setDaemon(true);
+    service = Executors.newSingleThreadScheduledExecutor();
+    service.execute(runThread);
+    Thread.sleep(100);
+    lock.lock();
+    lock.unlock();
+  }
+
+  public static void stopServer() {
+    if (server != null) {
+      server.setShouldStop(true);
+      server.stop();
+    }
+    runThread.interrupt();
+    service.shutdownNow();
   }
 
   public void run() {
+    lock.lock();
     try {
       TServerTransport serverTransport = null;
-      if (isBlocking) {
+      if (serverMode) {
         serverTransport = new TServerSocket(PORT);
       } else {
         serverTransport = new TNonblockingServerSocket(PORT);
@@ -69,8 +101,8 @@ public class ServerExample implements Runnable {
       R66Service.Processor<R66ServiceImpl> processor =
           new R66Service.Processor<R66ServiceImpl>(
               new R66ServiceImpl());
-      TServer server = null;
-      if (isBlocking) {
+      server = null;
+      if (serverMode) {
         server = new TThreadPoolServer(
             new TThreadPoolServer.Args(serverTransport).processor(processor));
       } else {
@@ -83,9 +115,11 @@ public class ServerExample implements Runnable {
                 .processor(processor));
       }
       System.out.println("Starting server on port " + PORT);
+      lock.unlock();
       server.serve();
     } catch (TTransportException e) {
       e.printStackTrace();
+      lock.unlock();
     }
   }
 }

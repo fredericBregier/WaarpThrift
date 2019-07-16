@@ -36,6 +36,10 @@ public class ClientExample implements Runnable {
   private static final int tries = 100000;
 
   public static void main(String[] args) {
+    new ClientExample().testClient();
+  }
+
+  public void testClient() {
     try {
       TTransport transport = null;
       transport = new TSocket("localhost", PORT);
